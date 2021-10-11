@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape
-            android:shape="rectangle">
-            <solid
-                android:color="#1DA1F2">
-
-
-            </solid>
-            <corners android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-
-
-        </shape>
-
-    </item>
-</selector>
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--fill color-->
+    <gradient
+        android:type="linear"
+        android:startColor="#ddd6f3"
+        android:endColor="#faaca8"
+        android:angle="40"/>
+    <!--Border width and border color-->
+    <stroke android:width="3dp" android:color="@android:color/white"/>
+    <!--The four corners of the button are arc corners -->
+    <!-- Arc angle radius -->
+    <corners android:radius="60dp"/>
+</shape>
