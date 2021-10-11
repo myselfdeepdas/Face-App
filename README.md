@@ -30,7 +30,7 @@ How to use this App: ⏬
  
  Please go through this directory to find the apk file below ⤵
  <h4><i>
- Face-App (repo) \Face App.apk
+ Face-App (Repo-Main-Branch) \Face App.apk
  </i></h4>
     
 ## Thanks To Visit 🥰
