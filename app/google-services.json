@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "507140941223",
+    "project_id": "face-app-a73be",
+    "storage_bucket": "face-app-a73be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507140941223:android:0830f5fc5d3a70c704c282",
+        "android_client_info": {
+          "package_name": "com.example.faceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507140941223-b8dlpoo4cmd2aj4rv7msum03jhee6a5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faceapp",
+            "certificate_hash": "b3ae505fca47c33942adc7ff5f8219203d48a462"
+          }
+        },
+        {
+          "client_id": "507140941223-a0nrccr3nphiusnn189ll01pkeka4ut4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpcHoTTY3umw6crAS_l3yp-smihiTD5Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507140941223-a0nrccr3nphiusnn189ll01pkeka4ut4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
