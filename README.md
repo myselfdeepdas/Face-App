@@ -12,7 +12,8 @@ How to use this App: ⏬
 5) Congratulations !! all the captured faces has been detected.
 6) All the number of faces which is detected will be shown to your screen.
 
-
+# NOTE:
+* MASTER BRANCH IS THE OPEN-SOURCE CONTRIBUTING BRANCH, ANYONE CAN CONTRIBUTE TO THIS BRANCH ONLY, DONT MAKE PR OR CHANGES TO OTHER BRANCHES. 
 
 ## Developer 👨‍💻
 
