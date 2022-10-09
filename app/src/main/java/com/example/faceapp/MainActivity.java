@@ -7,6 +7,7 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,6 +22,7 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.face.FirebaseVisionFace;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetector;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions;
+import com.wonderkiln.camerakit.CameraKit;
 import com.wonderkiln.camerakit.CameraKitError;
 import com.wonderkiln.camerakit.CameraKitEvent;
 import com.wonderkiln.camerakit.CameraKitEventListener;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     CameraView cameraView;
     deepGraphicOverlay deepgraphicOverlay;
     Button btn;
+    ImageView camera_face_change;
     AlertDialog waitingdialog;
     @Override
     protected void onResume() {
@@ -53,12 +56,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         cameraView=findViewById(R.id.camera);
+        camera_face_change = findViewById(R.id.camera_face_change);
         deepgraphicOverlay=findViewById(R.id.graphic_overlay);
         btn=findViewById(R.id.open);
         waitingdialog=new SpotsDialog.Builder().setContext(this)
                 .setMessage("please wait")
                 .setCancelable(false)
                 .build();
+
+        camera_face_change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cameraView.isFacingBack()) cameraView.setFacing(CameraKit.Constants.FACING_FRONT);
+                else cameraView.setFacing(CameraKit.Constants.FACING_BACK);
+            }
+        });
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -25,9 +25,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-
         android:layout_marginStart="101dp"
         android:layout_marginLeft="100dp"
+        android:textSize="18sp"
         android:layout_marginEnd="111dp"
         android:layout_marginBottom="6dp"
         android:background="@drawable/roundbutton"
@@ -39,6 +39,25 @@
         android:id="@+id/graphic_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/roundbutton">
+
+
+            <ImageView
+                android:id="@+id/camera_face_change"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_flip_camera_android_24"/>
+
+        </LinearLayout>
 
 
 </RelativeLayout>
