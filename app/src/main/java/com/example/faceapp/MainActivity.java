@@ -145,6 +145,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
+
+                //This code automatically resets the camera
+                cameraView.start();
+                cameraView.captureImage();
+                deepgraphicOverlay.clear();
             }
         });
         builder.setMessage(String.format("Detected %d faces in image",count));
