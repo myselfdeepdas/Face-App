@@ -8,6 +8,12 @@
     android:background="#e8dbfb"
     tools:ignore="MissingClass">
 
+    <ImageView
+        android:id="@+id/gallery_photo_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
 
     <com.wonderkiln.camerakit.CameraView
         android:layout_width="match_parent"
@@ -39,6 +45,26 @@
         android:id="@+id/graphic_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
+        <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/roundbutton">
+
+
+        <ImageView
+            android:id="@+id/photo_import_from_gallery"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_photo_library_24"/>
+
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="50dp"
